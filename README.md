@@ -10,5 +10,7 @@ git clone https://github.com/Ducitur/Password-Generator-.git
 
 
 cd Password-Generator-
+
+
 python3 Password.py
 
