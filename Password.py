@@ -1,19 +1,37 @@
 import random
 import string
 
-print("hello, Welcome to DUCITUR password generator")
+#ne stand for name
+ne = input('What is your name:\n')
 
-length = int(input("\ Enter length of of password: "))
 
-lower = ("abcdefghijklmnopqrstuvwxyz")
-upper = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-num = string.digits
+print('Hello' +" " + ne + "\nWelcome to DUCITUR password generator\n")
 
-#sum lower,upper and num
+print("NOTE: your password length must be above 7\n")
 
-all = lower + upper + num
+#loop line 10 until condition is fulfill
+while True:
+    length = int(input('Enter length of password: '))
 
-temp = random.sample(all,length)
-password = "".join(temp)
+    if length < 7:
+        continue
 
-print("Your Password is :",password)
+    lower = ('abcdefghijklmnopqrstuvwxyz')
+    upper = ('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+    sum = string.digits
+    signs = string.punctuation
+
+    #add the following variable lower,upper,sum and signs(all)
+
+    all = lower + upper + sum + signs
+
+    #create a variable to hold the variable called temp
+
+    temp = random.sample(all, length)
+    password = "".join(temp)
+    print("Your Password is :",password)
+    break 
+
+print("\nYour security is our top priority")
+
+print("\nThanks for using DUCITUR password generator")
