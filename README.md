@@ -6,7 +6,7 @@ How to install for termux users
 pkg install git
 pkg install python 
 
-git clone https://github.com/Ducitur/Password-Generator-.git
+git clone https://github.com/Ducitur/Password-Generator
 
 
 cd Password-Generator-
